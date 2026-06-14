@@ -128,7 +128,7 @@ export default function LifetimeMomentum() {
         <div className="border-t border-gray-200 mb-14" />
 
         {/* Level 2: Declared Interest */}
-        <div className="flex flex-col sm:flex-row sm:align-center gap-4 mb-8">
+        <div className="flex flex-col sm:flex-col sm:items-center gap-4 mb-8">
           <LevelHeader
             imgSrc={level2Img}
             alt="Level 2: Declared Interest Signals"
