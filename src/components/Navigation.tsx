@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ExternalLink } from 'lucide-react';
-import logo from '../assets/SCC-Logo.webp';
+import logo from '../assets/SCC-Logo.png';
 
 const navLinks = [
   { label: 'Lifetime Momentum', href: '#lifetime-momentum' },
