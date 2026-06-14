@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-gray-700 bg-white antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green-dark text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 bg-navy-600 hover:bg-navy-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200;
+  }
+
+  .stat-card {
+    @apply bg-white rounded-xl border border-gray-100 shadow-card p-6 flex flex-col items-center text-center hover:shadow-card-hover transition-shadow duration-200;
+  }
+
+  .section-badge {
+    @apply inline-flex items-center gap-2 bg-brand-green/10 text-brand-green font-semibold text-sm px-4 py-1.5 rounded-full uppercase tracking-wide mb-4;
+  }
+}
