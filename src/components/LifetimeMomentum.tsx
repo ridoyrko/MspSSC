@@ -33,14 +33,12 @@ function StatCard({ icon: Icon, label, value, subLabel, accent }: StatCardProps)
 interface LevelHeaderProps {
   imgSrc: string;
   alt: string;
-  description: string;
 }
 
-function LevelHeader({ imgSrc, alt, description }: LevelHeaderProps) {
+function LevelHeader({ imgSrc, alt }: LevelHeaderProps) {
   return (
     <div className="flex flex-col sm:flex-row sm:justify-center items-center gap-4 mb-8">
       <img src={imgSrc} alt={alt} className="h-16 w-auto object-contain" />
-      <p className="text-gray-500 text-sm italic text-center sm:text-left">{description}</p>
     </div>
   );
 }
