@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Mail, Send, ExternalLink } from 'lucide-react';
-import logo from '../assets/SCC-Logo.webp';
+import logo from '../assets/SCC-Logo.png';
 
 const footerLinks = [
   { label: 'Lifetime Momentum', href: '#lifetime-momentum' },
